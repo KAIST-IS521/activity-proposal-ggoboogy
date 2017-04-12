@@ -21,15 +21,19 @@
 본 과제에서는 구글 브레인에서 공개한 머신러닝 오픈소스 라이브러리 Tensorflow~\cite{tensorflow}를 이용하여 CAPTCHA를 자동으로 판별하는 프로그램을 작성한다. 
 본 과제의 주요 목적은 TensorFlow를 통해 머신러닝을 구현하는 방법을 배우고, 이를 활용하여 향후 여러가지 보안문제를 해결하는 것이다. 
 본 과제는 가장 기본적인 숫자 및 문자 형태의 CAPTCHA를 판별해 내는 것을 1차 목표로 한다. 
-숫자 및 문자 형태의 CAPTCHA의 경우 사용자에게 상당히 annoying한 작업일 뿐만 아니라 높은 정확도로 자동 판별이 가능하기 때문에, 최근 구글, 드롭박스 등의 유명 사이트에서는 기존의 CAPTCHA 대신 reCAPTCHA~\cite{recaptcha}를 사용하고 있다. 
-이는 IP주소, 쿠키정보, 마우스 포인터 움직임 등을 분간하여 Turing Test를 수행하는 방식으로, 사용자는 단순히 \texttt{I'm not a robot.} 이라는 문자열 옆에 위치한 체크박스를 클릭하는 것만으로 테스트를 완료하게 된다.
-현재 reCAPTCHA에서 사용하는 정확한 판단 벡터의 경우 보안상의 문제로 공개되어 있지 않은 상태이다. 따라서 본 과제에서는 reCAPTCHA를 우회하는 경우 추가점수를 부여한다. 
+숫자 및 문자 형태의 CAPTCHA의 경우 사용자에게 상당히 annoying한 작업일 뿐만 아니라 높은 정확도로 자동 판별이 가능하기 때문에, 
+최근 구글, 드롭박스 등의 유명 사이트에서는 기존의 CAPTCHA 대신 reCAPTCHA~\cite{recaptcha}를 사용하고 있다. 
+이는 IP주소, 쿠키정보, 마우스 포인터 움직임 등을 분간하여 Turing Test를 수행하는 방식으로, 
+사용자는 단순히 \texttt{I'm not a robot.} 이라는 문자열 옆에 위치한 체크박스를 클릭하는 것만으로 테스트를 완료하게 된다.
+현재 reCAPTCHA에서 판별에 사용되는 정확한 판단 벡터의 경우 보안상의 문제로 공개되어 있지 않은 상태이다. 
+따라서 본 과제에서는 reCAPTCHA를 우회하는 경우 추가점수를 부여한다. 
 
 \section{Exercises}
 
 \begin{exercise}
 먼저 TensorFlow의 사용 방법을 익히기 위해 TensorFlow Tutorial 중 하나인 \texttt{MNIST For ML Beginners}~\cite{tftutorial}를 수행한다. 
-MNIST는 0 부터 9 사이에 해당하는 숫자 이미지로 이루어진 데이터베이스로, 각각의 이미지는 28x28의 크기를 가지며 각각은 픽셀 밝기 값(Intensity)으로 구성되어 있다. 
+MNIST는 0 부터 9 사이에 해당하는 숫자 이미지로 이루어진 데이터베이스로, 
+각각의 이미지는 28x28의 크기를 가지며 각각은 픽셀 밝기 값(Intensity)으로 구성되어 있다. 
 본 연습문제에서는 Softmax Regression을 이용하여 각각의 숫자 이미지를 구분하는 코드를 작성한다. 
 \end{exercise}
 
