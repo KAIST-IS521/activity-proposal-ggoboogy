@@ -34,22 +34,21 @@
 먼저 TensorFlow의 사용 방법을 익히기 위해 TensorFlow Tutorial 중 하나인 \texttt{MNIST For ML Beginners}~\cite{tftutorial}를 수행한다. 
 MNIST는 0 부터 9 사이에 해당하는 숫자 이미지로 이루어진 데이터베이스로, 
 각각의 이미지는 28x28의 크기를 가지며 각각은 픽셀 밝기 값(Intensity)으로 구성되어 있다. 
-본 연습문제에서는 Softmax Regression을 이용하여 각각의 숫자 이미지를 구분하는 코드를 작성한다. 
+본 활동에서는 Softmax Regression을 이용하여 각각의 숫자 이미지를 구분하는 코드를 작성한다. 
 \end{exercise}
 
 \begin{exercise}
-두 번째 활동에서는 TensorFlow를 이용하여 실제로 사용되는 CAPTCHA 이미지를 자동 판별하는 코드를 작성한다. 
+두 번째 활동에서는 TensorFlow를 이용하여 실제로 사용되는 CAPTCHA 이미지를 자동 판별하는 프로그램을 작성한다. 
 본 활동의 경우 CAPTCHA 데이터셋 수집에 있어 두 가지 방식으로 나눠질 수 있다. 
 첫 번째는 ~\cite{captchaset}와 같이 온라인상에 공개되어있는 기존 데이터 셋을 활용하는 방법이고, 
 두 번째는 일반적인 CAPTCHA Generator~\cite{generator1, generator2, generator3} 또는 
 특정 사이트 (e.g., Facebook, naver) 에서 사용하는 Generator로부터 CAPTCHA 이미지 데이터셋을 직접 수집하는 것이다.
-전자와 후자 모두 학생들은 최종적으로 수집된 데이터를 부여받게 되며, 동일한 데이터셋을 Training Set으로 사용하게 된다.
-
+전자와 후자 모두 학생들은 최종적으로 수집된 데이터를 부여받게 되며, 전체 데이터셋 및 테스트셋은 모든 학생이 동일해야 한다.
+즉, 트레이닝셋의 경우 전체 데이터셋 내에서 자유롭게 가감이 가능하다. 
 \end{exercise} 
 
-
 \begin{exercise} (Optional)
-
+본 활동에서는 근래 구글, 드롭박스 등의 대형 사이트에서 자주 사용되는 reCAPTCHA를 우회하는 프로그램을 작성한다. 앞서 언급한 바와 같이 현재 정확한 판별 벡터가 공개되지 않은 상태이기 때문에 본 활동은 선택활동이며 우회시 추가점수가 부여된다.
 \end{exercise}
 
 \section{Expected Solutions}
